@@ -1,68 +1,102 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Redux
 
-## Available Scripts
+![React + Redux](https://miro.medium.com/max/800/1*bs6W6c6yYS36PcD9joLVtw.png)
 
-In the project directory, you can run:
+## What is Redux?
 
-### `yarn start`
+Redux is a predictable state container for JavaScript apps
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. "for JavaScript apps"
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  1.1. Redux is not tied to React
 
-### `yarn test`
+  1.2. Can be used with React, Angular, Vue or even vanilla JavaScript
+  
+  1.3. Redux is a library for JavaScript applications
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. "state container"
 
-### `yarn build`
+  2.1. Redux stores the state of your application
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  2.2. Consider a React app - state of a component
+    ```
+    state = {
+      isUserLoggedIn: true, 
+      username: 'Esaú',
+      profileUrl: '',
+      onlineUsers: [],
+      isModalOpened: false
+    }
+    ```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+  2.3. Redux will store and manage the application state
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. "predictable"
 
-### `yarn eject`
+  3.1. Redux is a state container
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  3.2. The state of the application can change
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  3.3. In Redux, all state transitions are explicit and it is possible to keep track of them
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  3.4. The changes to your application's state become predictable
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Why use Redux?
 
-## Learn More
+If you wanna manage the state of your application in a predictable way, redux can help you.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Three Principles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. "The state of your whole application is stored in an object tree within a single store"
 
-### Code Splitting
+  1.2. Maintain our application state in a single object which would be managed by the Redux store 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+2. "The only way to change the state is to emit an action, an object describing what happened"
 
-### Analyzing the Bundle Size
+  2.1. To update the state of our app, you need to let Redux know about that with an action
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+  2.2. Not allowed to directly update the state object
 
-### Making a Progressive Web App
+3. "To specify how the state tree is transformed by actions, you write pure reducers"
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+  3.1. `const reducer = (previousState, action) => newState`
 
-### Advanced Configuration
+## Actions
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Reducers
 
-### Deployment
+## Store 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## How do I start?
 
-### `yarn build` fails to minify
+1. Fork this project
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Forking the project](https://camo.githubusercontent.com/6f03010c651d060f8b7cfc17da7098c1757c4ead/68747470733a2f2f6669727374636f6e747269627574696f6e732e6769746875622e696f2f6173736574732f526561646d652f666f726b2e706e67)
+
+2. Clone the forked repository
+
+`git clone https://github.com/user/react-redux` (if you use `git`)
+
+or 
+
+`gh repo clone https://github.com/user/react-redux` (if you use `gh` cli)
+
+3. Install the dependencies
+
+`npm install` (if you use `npm`)
+
+or
+
+`yarn` (if you use `yarn`)
+
+4. Start the project 
+
+`npm start` (if you `npm`)
+
+or
+
+`yarn start` (if you use `yarn`)
+
+-----
+
+[LICENSE](./LICENSE)
