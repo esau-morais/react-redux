@@ -76,27 +76,27 @@ If you wanna manage the state of your application in a predictable way, redux ca
 
 2. Clone the forked repository
 
-`git clone https://github.com/user/react-redux` (if you use `git`)
+    `git clone https://github.com/user/react-redux` (if you use `git`)
 
-or 
+    or 
 
-`gh repo clone https://github.com/user/react-redux` (if you use `gh` cli)
+    `gh repo clone https://github.com/user/react-redux` (if you use `gh` cli)
 
 3. Install the dependencies
 
-`npm install` (if you use `npm`)
+    `npm install` (if you use `npm`)
 
-or
+    or
 
-`yarn` (if you use `yarn`)
+    `yarn` (if you use   `yarn`)
 
 4. Start the project 
 
-`npm start` (if you `npm`)
+    `npm start` (if you `npm`)
 
-or
+    or
 
-`yarn start` (if you use `yarn`)
+    `yarn start` (if you use `yarn`)
 
 -----
 
