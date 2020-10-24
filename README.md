@@ -62,12 +62,6 @@ If you wanna manage the state of your application in a predictable way, redux ca
 
     3.1. `const reducer = (previousState, action) => newState`
 
-## Actions
-
-## Reducers
-
-## Store 
-
 ## How do I start?
 
 1. Fork this project
